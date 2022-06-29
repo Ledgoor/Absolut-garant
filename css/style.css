@@ -1,0 +1,44 @@
+/*----- [ FONTS ] -----*/
+
+@font-face {
+    font-family: Cormorant-Bold;
+    src: url('../fonts/Cormorant/static/Cormorant-Bold.ttf'); 
+}
+
+@font-face {
+    font-family: Cormorant-SemiBold;
+    src: url('../fonts/Cormorant/static/Cormorant-SemiBold.ttf'); 
+}
+
+@font-face {
+    font-family: Times-Regular;
+    font-weight: 400;
+    src: url('../fonts/Times/Times.ttf'); 
+}
+
+@font-face {
+    font-family: Times-Bold;
+    font-weight: 700;
+    src: url('../fonts/Times/Times.ttf'); 
+}
+
+/*----- [ RESTYLE TAG ] -----*/
+
+* {
+	margin: 0px; 
+	padding: 0px; 
+	box-sizing: border-box;
+}
+
+ul, li {list-style-type: none;}
+
+a:hover {
+	text-decoration: none;
+	color: black;
+}
+
+.submenu {
+    display: flex;
+    justify-content: space-between;
+}
+
