@@ -1006,7 +1006,6 @@
 .p-r-250 {padding-right: 250px;}
 
 /*-----  [ MARGIN ] -----*/
-
 .m-t-0 {margin-top: 0px;}
 .m-t-1 {margin-top: 1px;}
 .m-t-2 {margin-top: 2px;}
@@ -1760,6 +1759,9 @@
 .m-l-248 {margin-left: 248px;}
 .m-l-249 {margin-left: 249px;}
 .m-l-250 {margin-left: 250px;}
+.m-l-300 {margin-left: 300px;}
+.m-l-350 {margin-left: 350px;}
+.m-l-450 {margin-left: 450px;}
 .m-r-0 {margin-right: 0px;}
 .m-r-1 {margin-right: 1px;}
 .m-r-2 {margin-right: 2px;}
@@ -2037,9 +2039,20 @@
 }
 
 .tit2:hover {
-    font-family: Times;
     font-weight: 600;
     color: black;
+}
+
+.tit3 {
+	font-family: Times;
+    font-size: 50px;
+}
+
+.tit4 {
+	font-family: Times;
+    font-size: 24px;
+	line-height: 1;
+	margin: 0;
 }
 
 .tit_logo_1 {
@@ -2062,6 +2075,13 @@
 
 /*----- [TXT] -----*/
 
+.txt1 {
+	font-family: Helvetica;
+	font-size: 18px;
+	color: #8E8E8E;
+	line-height: 1.2;
+}
+
 /*----- [TEXT-ALIGN] -----*/
 
 .text-a-c {text-align: center;}
@@ -2069,11 +2089,72 @@
 /*----- [BORDER] -----*/
 
 .border-l {
-    border-left: 3px solid #DBCAB7;
+    border-left: 2px solid #DBCAB7;
     padding-left: 35px;
-    margin: 0;
+	margin: 0;
+}
+
+.border-l-slider {
+    border-left: 2px solid #DBCAB7;
+    padding-left: 25px;
 }
 
 /*----- [FLOAT] -----*/
 .f-l {float: left;}
 .f-r {float: right;}
+
+/*----- [BUTTON] -----*/
+
+.btn1 {
+	background-color: #DBCAB7;
+	border: 0px solid;
+	padding: 17px 47.5px;
+	font-family: Times;
+	font-weight: 400;
+	font-size: 20px;
+}
+
+.btn1:hover {
+	background-color: #AFA192;
+	transition: .5s;
+}
+
+.btn1:active {
+	background-color: #fff;
+	border: 2px solid #DBCAB7;
+	transition: .1s;
+}
+
+/*----- [IMAGES] -----*/
+
+.img__ico_1 {
+	width: 89px;
+	height: 82px;
+}
+
+.img__ico_2 {
+	width: 91px;
+	height: 82px;
+}
+
+.img__ico_3 {
+	width: 93px;
+	height: 112px;
+}
+
+.img__ico_4 {
+	width: 94px;
+	height: 85px;
+}
+
+/*----- [BACKGROUND] -----*/
+
+.bg-1 {background-color: #f8f8f8; box-shadow: 100px #8E8E8E;}
+.bg-2 {
+	background-color: #DBCAB7;
+	padding-top: 40px;
+}
+
+.boxShadow1 {
+	box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.14);
+}

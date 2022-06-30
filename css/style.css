@@ -24,6 +24,12 @@
 
 /*----- [ RESTYLE TAG ] -----*/
 
+body {
+    background-image: url(../img/fon_1.png);
+    background-repeat: no-repeat;
+    background-position-x: right;
+}
+
 * {
 	margin: 0px; 
 	padding: 0px; 
@@ -40,5 +46,54 @@ a:hover {
 .submenu {
     display: flex;
     justify-content: space-between;
+    gap: 26px;
+}
+
+/*----- [SLIDER] -----*/
+
+.slider {
+	position: relative;
+	width:700px;
+}
+
+.slider__check {
+    position:absolute;
+    clip:rect(0 0 0 0);
+    overflow:hidden;
+}
+
+.slider__content {
+    display:none;
+    position:absolute;
+    top:0;
+    left:0;
+}
+
+.slider__label {
+    margin-top: 550px;
+    margin-bottom: 63px;
+    overflow:hidden;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background:#BFBFBF;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.slider__check:checked + .slider__label + .slider__content {
+	display:block;
+}
+
+/* Current */
+.slider__check:checked + .slider__label {
+	background:#DBCAB7;
+}
+
+.arrow {
+    width: 74%;
+    margin-top: 100%;
+    float: right;
+    cursor: pointer;
 }
 
