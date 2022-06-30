@@ -212,6 +212,60 @@
         </div>
     </section>
 
+    <section class="container">
+        <div class="row">
+            <div class="col-xxl p-t-70">
+                <div class="col-12 jc-sb">
+                    <div class="col-1"></div>
+                    <div class="col-10">
+                        <h1 class="tit3">Наши услуги</h1>
+                        <div class="m-l-35 border-l-slider m-b-56">
+                            <p class="txt2">Решаем вопросы любой <br> сложности</p>                    
+                        </div>
+                    </div>
+                    <div class="col-1"></div>
+                </div>
+                <div class="col-12 jc-sb p-b-24">
+                    <div class="col-1"></div>
+                    <div class="col-3 border-box h-img_1">
+                        <a href="" class="txt3">Правовая помощь по делам о банкротстве </a>
+                    </div>
+                    <div class="col-3 border-box h-img_2">
+                        <a href="" class="txt3">Разрешение коммерческих споров</a>
+                    </div>
+                    <div class="col-3 border-box h-img_3">
+                        <a href="" class="txt3">Абонентское юридическое обслуживание</a>
+                    </div>
+                    <div class="col-1"></div>
+                </div>
+
+                <div class="col-12 jc-sb p-b-24">
+                    <div class="col-1"></div>
+                    <div class="col-3 border-box h-img_4">
+                        <a href="" class="txt3">Сопровождение сделок и консультации</a>
+                    </div>
+                    <div class="col-3 border-box h-img_5">
+                        <a href="" class="txt3">Разрешение корпоративных конфликтов</a>
+                    </div>
+                    <div class="col-3 border-box h-img_6">
+                        <a href="" class="txt3">Абонентское юридическое обслуживание</a>
+                    </div>
+                    <div class="col-1"></div>
+                </div>
+
+                <div class="col-12 jc-sb">
+                    <div class="col-1"></div>
+                    <div class="col-3 border-box h-img_7">
+                        <a href="" class="txt3">Защита прав частных клиентов</a>
+                    </div>
+                    <div class="col-3"></div>
+                    <div class="col-3"></div>
+                    <div class="col-1"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 <!-- [SCRIPT] -->
 <script>
     let slideIndex = 1;
@@ -230,13 +284,14 @@
 
     function showSlides(n) {
         let slides = document.getElementsByClassName("slider__check");
-        if (n > slides.length) {
-        slideIndex = 1;
+
+        if (n > slides.length - 1) {
+        slideIndex = 0;
+        } else if (n < 0) {
+        slideIndex = slides.length - 1;
         }
-        if (n < 1) {
-            slideIndex = slides.length;
-        }
-    
+
+        slides[slideIndex].checked = true;
     }
     var timer = 0;
     makeTimer(); //Создаем интервал 
