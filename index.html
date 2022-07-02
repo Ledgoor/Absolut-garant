@@ -34,11 +34,11 @@
                     
                     <div class="m-t-10 col-4">
                         <ul class="f-r submenu">
-                            <li><a class="tit2" href="">Главная</a></li>
-                            <li><a class="tit2" href="">Услуги</a></li>
+                            <li><a class="tit2" href="index.html">Главная</a></li>
+                            <li><a class="tit2" href="services.html">Услуги</a></li>
                             <li><a class="tit2" href="">Новости</a></li>
                             <li><a class="tit2" href="">О нас</a></li>
-                            <li><a class="tit2" href="">Контакты</a></li>
+                            <li><a class="tit2" href="contact.html">Контакты</a></li>
                         </ul>
                     </div>
                     <div class="m-t-23 col-2">
@@ -394,19 +394,19 @@
                     <div class="col-12 jc-sb">
                         <div class="col-4"></div>
                         <div class="col-4 m-b-35 jc-sb">
-                            <a href="" class="txt6">Услуги</a>
+                            <a href="services.html" class="txt6">Услуги</a>
                             <a href="" class="txt6">Новости</a>
                             <a href="" class="txt6">О нас</a>
-                            <a href="" class="txt6">Контакты</a>
+                            <a href="contact.html" class="txt6">Контакты</a>
                         </div>
                         <div class="col-4"></div>
                     </div>
                     <div class="col-12 jc-sb">
                         <div class="col-4"></div>
                         <div class="text-a-c col-4">
-                            <a class="tit_logo_1" href="">Абсолют гарант</a>
+                            <a class="tit_logo_1" href="index.html">Абсолют гарант</a>
                             <br>
-                            <a class="tit_logo_2" href="">юридическая фирма</a>
+                            <a class="tit_logo_2" href="index.html">юридическая фирма</a>
                         </div>
                         <div class="col-4"></div>
                     </div>
@@ -446,41 +446,6 @@
     </footer>
 
 <!-- [SCRIPT] -->
-<script>
-    let slideIndex = 1;
-    showSlides(slideIndex);
-
-    let next = document.getElementById ('next');
-
-    next.addEventListener ("click", function () {
-    showSlides(slideIndex += 1);
-    makeTimer();//Пересоздаем интервал если производится нажатие 
-    });
-
-    function currentSlide(n) {
-    showSlides(slideIndex = n);
-    }
-
-    function showSlides(n) {
-        let slides = document.getElementsByClassName("slider__check");
-
-        if (n > slides.length - 1) {
-        slideIndex = 0;
-        } else if (n < 0) {
-        slideIndex = slides.length - 1;
-        }
-
-        slides[slideIndex].checked = true;
-    }
-    var timer = 0;
-    makeTimer(); //Создаем интервал 
-    function makeTimer(){
-        clearInterval(timer) //Очистим интервал, это позволит прервать его работу и отменить перелистывание
-        timer = setInterval(function(){
-        slideIndex++;
-        showSlides(slideIndex);
-        },5000);
-    }
-</script>
+    <script src="js/slider.js"></script>
 </body>
 </html>

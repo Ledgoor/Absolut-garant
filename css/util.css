@@ -2068,6 +2068,12 @@
 	font-size: 20px;
 }
 
+.tit7 {
+	font-family: Times;
+	font-size: 36px;
+	line-height: 1.1;
+}
+
 .tit_logo_1 {
     font-family: Cormorant-Bold;
     text-decoration: none;
@@ -2199,6 +2205,18 @@
 	color: red;
 }
 
+.txt10 {
+	font-family: Helvetica;
+	font-size: 18px;
+	color: #8E8E8E;
+	line-height: 1.6;
+}
+
+.txt10:active,
+.txt10:hover {
+	color: #8E8E8E;
+}
+
 /*----- [TEXT-ALIGN] -----*/
 
 .text-a-c {text-align: center;}
@@ -2240,6 +2258,10 @@
 
 }
 
+.border-b {
+	border-bottom: 1px #000000 solid;
+}
+
 /*----- [FLOAT] -----*/
 .f-l {float: left;}
 .f-r {float: right;}
@@ -2261,6 +2283,27 @@
 }
 
 .btn1:active {
+	background-color: #fff;
+	border: 2px solid #DBCAB7;
+	transition: .1s;
+}
+
+.btn2 {
+	background-color: #DBCAB7;
+	border: 0px solid;
+	padding: 13px 43.5px;
+	font-family: Times;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 1.1;
+}
+
+.btn2:hover {
+	background-color: #AFA192;
+	transition: .5s;
+}
+
+.btn2:active {
 	background-color: #fff;
 	border: 2px solid #DBCAB7;
 	transition: .1s;
