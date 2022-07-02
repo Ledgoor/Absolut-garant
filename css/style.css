@@ -97,3 +97,9 @@ a:hover {
     cursor: pointer;
 }
 
+.map {
+    position: absolute;
+    background: #fff;
+    width: 469px;
+    height: 224px;
+}

@@ -191,6 +191,7 @@
 }
 .fa-envelope-o:before {
   content: "\f003";
+  color: black;
 }
 .fa-heart:before {
   content: "\f004";
@@ -614,6 +615,7 @@
 }
 .fa-phone:before {
   content: "\f095";
+  color: black;
 }
 .fa-square-o:before {
   content: "\f096";
@@ -626,6 +628,7 @@
 }
 .fa-twitter:before {
   content: "\f099";
+  color: black;
 }
 .fa-facebook-f:before,
 .fa-facebook:before {
@@ -1217,6 +1220,7 @@
 }
 .fa-instagram:before {
   content: "\f16d";
+  color: #000;
 }
 .fa-flickr:before {
   content: "\f16e";
@@ -1296,6 +1300,7 @@
 }
 .fa-vk:before {
   content: "\f189";
+  color: #000;
 }
 .fa-weibo:before {
   content: "\f18a";
@@ -1792,6 +1797,7 @@
 }
 .fa-whatsapp:before {
   content: "\f232";
+  color:#000;
 }
 .fa-server:before {
   content: "\f233";
