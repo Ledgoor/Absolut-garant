@@ -2386,7 +2386,11 @@
 	padding: 0;
 }
 
-
+@media (max-width: 576px) {
+	.dis-n {display: none;}
+	.jc-sb {display: block;}
+	
+}
 
 
 
