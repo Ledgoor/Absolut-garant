@@ -2389,7 +2389,38 @@
 @media (max-width: 576px) {
 	.dis-n {display: none;}
 	.jc-sb {display: block;}
-	
+	.tit3 {font-size: 22px;}
+	.tit4 {font-size: 16px;}
+	.tit5 {
+		font-size: 20px;
+		text-align: center;
+		border-bottom: 2px solid#DBCAB7;
+	}
+	.border-l-slider {
+		border-left: none;
+		padding-left: 0;
+	}
+	.m-l-35 {margin-left: 0;}
+	.m-b-56 {margin-bottom: 16px;}
+	.m-b-116 {margin-bottom: 62px;}
+	.txt1 {font-size: 13px;}
+	.txt2 {
+		font-size: 12px;
+		text-align: center;
+	}
+	.txt3 {
+		font-size: 14px;
+		color: #000000;
+	}
+	.p-l_r-8-mob {padding: 0 8px;}
+	.p-b-24 {padding-bottom: 0;}
+	.p-b-44 {padding-bottom: 10px;}
+	.m-l-450 {margin-left: 0px;}
+	.border-box {
+		border: none;
+		border-top: 2px solid #DBCAB7;
+		padding: 19px 0;
+	}
 }
 
 

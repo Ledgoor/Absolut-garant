@@ -56,6 +56,13 @@ a:hover {
 	width:700px;
 }
 
+@media (max-width: 576px) {
+   .slider {
+        width: 100%;
+        text-align: center;
+   }
+}
+
 .slider__check {
     position:absolute;
     clip:rect(0 0 0 0);
@@ -80,6 +87,12 @@ a:hover {
     border-radius: 50%;
     cursor: pointer;
 }
+
+@media (max-width: 576px) {
+    .slider__label {
+        margin-top: 350px;
+    }
+ }
 
 .slider__check:checked + .slider__label + .slider__content {
 	display:block;
