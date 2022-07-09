@@ -514,3 +514,63 @@ a:hover {
         text-align: center;
     }
 }
+
+@media (min-width:577px) {
+    .menuItem,
+    .menuItem:hover,
+    .hamburger,
+    .hamburger > .closeIcon,
+    .menu,
+    .showMenu {
+        display: none;
+    }
+}
+
+@media (max-width:576px) {
+    .menuItem {
+        display: block;
+        margin: 2rem 4rem;
+        font-size: 1.8rem;
+        color: #000;
+        text-decoration: none;
+    }
+    
+    .menuItem:hover {
+        text-decoration: underline;
+    }
+    
+    .hamburger {
+        position: fixed;
+        z-index: 100;
+        top: 1rem;
+        right: 1rem;
+        padding: 4px;
+        border: none;
+        background: rgba(255, 255, 255, 0);
+        cursor: pointer;
+    }
+    
+    .hamburger > .closeIcon {
+        display: none;
+    }
+    
+    .menu {
+        position: fixed;
+        transform: translateY(-100%);
+        transition: transform 0.2s;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 99;
+        border: none;
+        background: #fff;
+        list-style: none;
+        padding-top: 4rem;
+    }
+    
+    .showMenu {
+        transform: translateY(0);
+    }
+}
+
