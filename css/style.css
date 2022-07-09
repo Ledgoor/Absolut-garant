@@ -110,7 +110,7 @@ a:hover {
     cursor: pointer;
 }
 
-.map {
+.info {
     position: absolute;
     background: #fff;
     width: 469px;
